@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +42,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                <connections>
+                                    <segue destination="EUj-LU-Z8E" kind="presentation" id="8ll-v3-XHK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijK-IT-DmB">
                                 <rect key="frame" x="12" y="353" width="105" height="31"/>
@@ -84,6 +87,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.75" y="97.183098591549296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="68b-Bj-zJy">
+            <objects>
+                <viewController id="EUj-LU-Z8E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r70-jz-H4k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gov-La-dj4">
+                                <rect key="frame" x="122" y="427" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fkK-4u-CF0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fkK-4u-CF0" firstAttribute="trailing" secondItem="Gov-La-dj4" secondAttribute="trailing" constant="122" id="7b9-iN-8KC"/>
+                            <constraint firstItem="Gov-La-dj4" firstAttribute="leading" secondItem="fkK-4u-CF0" secondAttribute="leading" constant="122" id="9oa-9C-eNe"/>
+                            <constraint firstItem="fkK-4u-CF0" firstAttribute="bottom" secondItem="Gov-La-dj4" secondAttribute="bottom" constant="90" id="dBi-Ca-ZBF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8r-IK-atR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="97"/>
         </scene>
     </scenes>
     <resources>
