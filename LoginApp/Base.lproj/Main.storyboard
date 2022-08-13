@@ -75,7 +75,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bAH-Uh-61V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2xf-xh-pge"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uc9-WZ-WLi" secondAttribute="bottom" constant="236" id="3Kb-Th-0lF"/>
@@ -121,6 +121,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ9-75-GIb">
+                                <rect key="frame" x="108.5" y="166" width="103" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fkK-4u-CF0"/>
                         <color key="backgroundColor" white="0.62" alpha="1" colorSpace="calibratedWhite"/>
@@ -129,10 +135,16 @@
                             <constraint firstItem="Gov-La-dj4" firstAttribute="leading" secondItem="fkK-4u-CF0" secondAttribute="leading" constant="122" id="9oa-9C-eNe"/>
                             <constraint firstItem="ezP-6C-hZY" firstAttribute="leading" secondItem="fkK-4u-CF0" secondAttribute="leading" constant="97" id="Qna-Vm-mL8"/>
                             <constraint firstItem="fkK-4u-CF0" firstAttribute="trailing" secondItem="ezP-6C-hZY" secondAttribute="trailing" constant="87" id="QpS-mz-XFD"/>
+                            <constraint firstItem="DZ9-75-GIb" firstAttribute="top" secondItem="ezP-6C-hZY" secondAttribute="bottom" constant="49.5" id="XN0-Fn-Byt"/>
                             <constraint firstItem="fkK-4u-CF0" firstAttribute="bottom" secondItem="Gov-La-dj4" secondAttribute="bottom" constant="90" id="dBi-Ca-ZBF"/>
+                            <constraint firstItem="DZ9-75-GIb" firstAttribute="centerX" secondItem="r70-jz-H4k" secondAttribute="centerX" id="tMc-zo-caj"/>
                             <constraint firstItem="ezP-6C-hZY" firstAttribute="top" secondItem="fkK-4u-CF0" secondAttribute="top" constant="96" id="u5a-3a-N92"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="DZ9-75-GIb" id="GCg-gX-iaH"/>
+                        <outlet property="welcomeLabel" destination="ezP-6C-hZY" id="DBm-OL-tsu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J8r-IK-atR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="EUu-Z2-QdC" userLabel="Exit" sceneMemberID="exit"/>
@@ -141,8 +153,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

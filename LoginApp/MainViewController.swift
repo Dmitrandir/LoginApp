@@ -18,7 +18,10 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupSecurePassword()
+        
+        
     }
 
     @IBAction func logInButtonPressed() {
@@ -40,6 +43,10 @@ class MainViewController: UIViewController {
         passwordTF.text = ""
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.userName = userNameTF.text
+    }
 }
 
 // MARK: - UAAlertControllers
@@ -77,7 +84,16 @@ extension MainViewController {
         present(alert, animated: true)
     }
     
+// MARK: - SetUp Elements
+    private func setupSecurePassword() {
+        passwordTF.isSecureTextEntry = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
+
 
 
 
