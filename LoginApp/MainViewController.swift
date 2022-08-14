@@ -12,16 +12,14 @@ class MainViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    let userName = "q"
-    let password = "q"
+    private let userName = "Djony-mem"
+    private let password = "qwerty"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupSecurePassword()
-        
-        
     }
 
     @IBAction func logInButtonPressed() {
@@ -93,11 +91,3 @@ extension MainViewController {
         self.view.endEditing(true)
     }
 }
-
-
-
-
-
-
-
-
