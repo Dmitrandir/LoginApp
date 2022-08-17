@@ -9,13 +9,12 @@ import UIKit
 
 class MoreInfoViewController: UIViewController {
     
-    var userName: String!
+    private let userName: User!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
