@@ -12,8 +12,8 @@ class MainViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    private let userName = "Djony-mem"
-    private let password = "qwerty"
+    private let user = User(userName: "Q", password: "Q")
+    //private let password = "Q"
     
     
     override func viewDidLoad() {
@@ -23,17 +23,17 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func logInButtonPressed() {
-        if userNameTF.text != userName && passwordTF.text != password {
+        if userNameTF.text != user.userName && passwordTF.text != user.password {
             showAlertInvalid(with: "Invalid login or password", and: "Please, enter correct login and password")
         }
     }
     
     @IBAction func forgotUserNameButtonPressed() {
-        showAlertForgotUserName(with: "Oops!", and: "You are name is \(userName)😉")
+        showAlertForgotUserName(with: "Oops!", and: "You are name is \(user.userName)😉")
     }
     
     @IBAction func forgotPasswordPressed() {
-        showAlertPaasword(with: "Oops!", and: "Your password is \(password)😉")
+        showAlertPaasword(with: "Oops!", and: "Your password is \(user.password)😉")
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
@@ -44,7 +44,8 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = userNameTF.text
-    }
+    
+        }
 }
 
 // MARK: - UAAlertControllers

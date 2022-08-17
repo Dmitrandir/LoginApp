@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E230221828AC30D500F72578 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230221728AC30D500F72578 /* MoreInfoViewController.swift */; };
+		E28D7E2A28AD636C00A3250C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28D7E2928AD636C00A3250C /* User.swift */; };
 		E2BFEDEE28A7D07500C6AC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEDED28A7D07500C6AC62 /* AppDelegate.swift */; };
 		E2BFEDF028A7D07500C6AC62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEDEF28A7D07500C6AC62 /* SceneDelegate.swift */; };
 		E2BFEDF228A7D07500C6AC62 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BFEDF128A7D07500C6AC62 /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E230221728AC30D500F72578 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		E28D7E2928AD636C00A3250C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2BFEDEA28A7D07500C6AC62 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BFEDED28A7D07500C6AC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BFEDEF28A7D07500C6AC62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E28D7E2528AD61FB00A3250C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2BFEDF128A7D07500C6AC62 /* MainViewController.swift */,
+				E2BFEE0128A7E11100C6AC62 /* WelcomeViewController.swift */,
+				E230221728AC30D500F72578 /* MoreInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E28D7E2628AD621A00A3250C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E28D7E2928AD636C00A3250C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E28D7E2728AD623D00A3250C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E2BFEDF328A7D07500C6AC62 /* Main.storyboard */,
+				E2BFEDF828A7D07800C6AC62 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E28D7E2828AD627000A3250C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E2BFEDED28A7D07500C6AC62 /* AppDelegate.swift */,
+				E2BFEDEF28A7D07500C6AC62 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		E2BFEDE128A7D07500C6AC62 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +98,11 @@
 		E2BFEDEC28A7D07500C6AC62 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				E2BFEDED28A7D07500C6AC62 /* AppDelegate.swift */,
-				E2BFEDEF28A7D07500C6AC62 /* SceneDelegate.swift */,
-				E2BFEDF128A7D07500C6AC62 /* MainViewController.swift */,
-				E2BFEE0128A7E11100C6AC62 /* WelcomeViewController.swift */,
-				E2BFEDF328A7D07500C6AC62 /* Main.storyboard */,
+				E28D7E2528AD61FB00A3250C /* ViewControllers */,
+				E28D7E2628AD621A00A3250C /* Models */,
+				E28D7E2728AD623D00A3250C /* Storyboards */,
+				E28D7E2828AD627000A3250C /* SupportFiles */,
 				E2BFEDF628A7D07800C6AC62 /* Assets.xcassets */,
-				E2BFEDF828A7D07800C6AC62 /* LaunchScreen.storyboard */,
 				E2BFEDFB28A7D07800C6AC62 /* Info.plist */,
 			);
 			path = LoginApp;
@@ -143,6 +181,8 @@
 			files = (
 				E2BFEE0228A7E11100C6AC62 /* WelcomeViewController.swift in Sources */,
 				E2BFEDF228A7D07500C6AC62 /* MainViewController.swift in Sources */,
+				E28D7E2A28AD636C00A3250C /* User.swift in Sources */,
+				E230221828AC30D500F72578 /* MoreInfoViewController.swift in Sources */,
 				E2BFEDEE28A7D07500C6AC62 /* AppDelegate.swift in Sources */,
 				E2BFEDF028A7D07500C6AC62 /* SceneDelegate.swift in Sources */,
 			);
